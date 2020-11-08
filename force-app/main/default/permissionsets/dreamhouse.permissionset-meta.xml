@@ -1,26 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
-        <application>Dreamhouse</application>
+        <application>DreamHouse</application>
         <visible>true</visible>
     </applicationVisibilities>
-    <classAccesses>
-        <apexClass>PagedResult</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>PropertyController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>SampleDataController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Broker__c.Broker_Id__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Broker__c.Email__c</field>
@@ -133,11 +116,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Property__c.Price_Sold__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Property__c.Price__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -145,6 +123,11 @@
         <editable>false</editable>
         <field>Property__c.Record_Link__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Property__c.RemoveMe__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -182,7 +165,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>dreamhouse</label>
+    <label>DreamHouse</label>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -206,19 +189,11 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>Property_Explorer</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
-    <tabSettings>
-        <tab>Property_Finder</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
-    <tabSettings>
         <tab>Property__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>Settings</tab>
+        <tab>Sample_Data_Import</tab>
         <visibility>Visible</visibility>
     </tabSettings>
 </PermissionSet>
